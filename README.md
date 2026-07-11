@@ -18,7 +18,7 @@ Static legal/support website for Social Mirror.
 5. Framework Preset: Other.
 6. Build Command: `npm run build`
 7. Output Directory: `.`
-8. Deploy.
+8. Deploy
 
 ## App URLs
 

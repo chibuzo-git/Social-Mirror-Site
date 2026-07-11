@@ -1,0 +1,12 @@
+{
+  "name": "social-mirror-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "serve .",
+    "build": "echo \"Static site - no build required\""
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
