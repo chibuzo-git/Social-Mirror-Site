@@ -95,11 +95,28 @@ button:focus-visible {
 .final-cta-mark,
 .mini-mark {
   position: relative;
-  display: inline-grid;
-  place-items: center;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.03));
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.025), 0 8px 22px rgba(255, 47, 146, 0.15);
+  display: inline-block;
+  background-image: url("./assets/app-icon.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 8px 22px rgba(255, 47, 146, 0.2);
+  overflow: hidden;
+}
+
+.brand-mark span,
+.final-cta-mark span,
+.mini-mark span {
+  display: none;
+}
+
+.brand-mark::before,
+.brand-mark::after,
+.final-cta-mark::before,
+.final-cta-mark::after,
+.mini-mark::before,
+.mini-mark::after {
+  content: none;
 }
 
 .brand-mark {
@@ -108,39 +125,24 @@ button:focus-visible {
   border-radius: 11px;
 }
 
-.brand-mark::before,
-.brand-mark span::before,
-.final-cta-mark::before,
-.final-cta-mark span::before,
-.mini-mark::before,
-.mini-mark span::before {
-  content: "";
-  position: absolute;
-  border-radius: 999px;
-  border: 2px solid transparent;
-  background: linear-gradient(var(--surface), var(--surface)) padding-box,
-    linear-gradient(135deg, var(--orange), var(--pink), var(--magenta)) border-box;
-}
-
-.brand-mark::before,
-.final-cta-mark::before,
-.mini-mark::before {
-  width: 46%;
-  height: 66%;
-  transform: rotate(-24deg) translateX(-10%);
-}
-
-.brand-mark span::before,
-.final-cta-mark span::before,
-.mini-mark span::before {
-  width: 46%;
-  height: 66%;
-  transform: rotate(24deg) translateX(10%);
-}
-
 .brand-mark-small {
   width: 34px;
   height: 34px;
+}
+
+.brand-mark,
+.brand-mark-small {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.mini-mark {
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.final-cta-mark {
+  border-radius: 19px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .header-nav {
@@ -447,10 +449,6 @@ button:focus-visible {
   border-radius: 8px;
 }
 
-.mini-mark::before,
-.mini-mark span::before {
-  border-width: 1.5px;
-}
 
 .mock-title {
   color: #e9e9ef;
