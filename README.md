@@ -1,6 +1,6 @@
 # Social Mirror Site
 
-Static legal/support website for Social Mirror.
+Conversion-focused static landing, legal, and support website for Social Mirror.
 
 ## Pages
 
@@ -9,24 +9,26 @@ Static legal/support website for Social Mirror.
 - `/terms.html` — Terms of Use
 - `/support.html` — Support
 
+## Store links
+
+- iOS: https://apps.apple.com/us/app/social-mirror/id6786519539
+- Google Play: Coming soon
+
 ## Deploying to Vercel
 
-1. Push this repo to GitHub.
-2. Go to Vercel.
-3. Add New Project.
-4. Import this GitHub repo.
-5. Framework Preset: Other.
-6. Build Command: `npm run build`
-7. Output Directory: `.`
-8. Deploy
+1. Push this folder to the GitHub repository already connected to Vercel.
+2. Vercel can deploy it as a static site.
+3. If prompted for project settings:
+   - Framework Preset: Other
+   - Build Command: `npm run build`
+   - Output Directory: `.`
 
-## App URLs
+## Local preview
 
-Use the deployed URLs in the Social Mirror app:
-
-- Privacy: `https://your-domain.com/privacy.html`
-- Terms: `https://your-domain.com/terms.html`
-- Support: `https://your-domain.com/support.html`
+```bash
+npm install
+npm start
+```
 
 ## Contact
 
