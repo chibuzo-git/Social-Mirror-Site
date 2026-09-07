@@ -811,7 +811,7 @@ button:focus-visible {
 }
 
 .goal-pills,
-.upload-visual,
+.profile-visual,
 .plan-visual {
   grid-column: 2;
   margin-top: 24px;
@@ -833,13 +833,13 @@ button:focus-visible {
   font-weight: 700;
 }
 
-.upload-visual {
+.profile-visual {
   display: flex;
   align-items: flex-end;
   gap: 7px;
 }
 
-.upload-visual span {
+.profile-visual span {
   width: 58px;
   height: 76px;
   border-radius: 11px;
@@ -847,7 +847,7 @@ button:focus-visible {
   border: 1px solid rgba(255, 255, 255, 0.07);
 }
 
-.upload-visual span:nth-child(2) {
+.profile-visual span:nth-child(2) {
   height: 88px;
 }
 
@@ -1474,7 +1474,7 @@ button:focus-visible {
   }
 
   .goal-pills,
-  .upload-visual,
+  .profile-visual,
   .plan-visual {
     grid-column: 1 / -1;
   }
